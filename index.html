@@ -8,18 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="colors" style="height: 50px;">
+    <select onchange="color(this.value)" style="height: 50px; width: 150px; font-size: 29px; border-style: solid; text-align: center;">
+        <option value="">color</option>
+        <option value="brown">Brown</option>
+        <option value="gray">Gray</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+    </select>
+</div>
       <div id="header">
         <div class="container">
             <nav>
                 <p class="logo">Atika Javed</p>
-                <ul>
+                <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                     
+
+                    
                 </ul>
+                <ion-icon name="menu-outline" class="toggle_icone"></ion-icon>
             </nav>
 
             <div class="header-text">
@@ -40,10 +54,11 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1"> 
-                    <img src="images/img5.jpg">
+                    <img src="images/img5.jpg" alt="">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
+                        
                         <p>I am a highly competent IT professional with a proven track record in designing websites, networking and managing databases. I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.</p>
                      
                         <div class="tab-titles">
@@ -56,6 +71,7 @@
                                 <li><span>HTML</span></li>
                                 <li><span>CSS</span></li>
                                 <li><span>JAVASCRIPT</span></li>
+                                
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
@@ -125,7 +141,7 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/img3.jpg">
+                <img src="images/img3.jpg" alt="">
                 <div class="layer">
                     <h3>Coding Webpage</h3>
                     <p>Coders use HTML to determine 
@@ -134,7 +150,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/img4.jpg">
+                <img src="images/img4.jpg" alt="">
                 <div class="layer">
                 <h3>Business Analyst</h3>
                 <p>Business analysts identify business areas that can be improved to increase efficiency and strengthen business processes. </p>
@@ -142,7 +158,7 @@
             </div>
             </div>
             <div class="work">
-                <img src="images/img2.jpg">
+                <img src="images/img2.jpg" alt="">
                 <div class="layer">
                     <h3>AI Chatbot</h3>
                     <p>a chatbot is a computer program that simulates and processes human conversation (either written or spoken), allowing humans to interact with digital devices as if they were communicating with a real person.</p>
@@ -169,7 +185,7 @@
                  <p><i class="fa-sharp fa-solid fa-envelope"></i>atikajaved000@gmail.com</p>
                  <p><i class="fa-duotone fa-phone"></i>0302545689</p>
                  <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a> 
                     <a href=""><i class="fa-brands fa-github"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -191,24 +207,8 @@
 
 
 
+       <script src="./main.js"> </script> 
 
 
-
-    </body>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-      </script>
-      
+</body>   
 </html> 
